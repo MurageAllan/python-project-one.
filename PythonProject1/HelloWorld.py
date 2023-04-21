@@ -1,0 +1,5 @@
+print("Hello world!")
+print(1 + 2)
+print(7 * 8)
+print()
+print("The end", "or it is ", "keep watching", 5  )

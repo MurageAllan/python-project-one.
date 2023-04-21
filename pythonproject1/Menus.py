@@ -1,0 +1,15 @@
+from tkinter import *
+top = Tk()
+top.geometry("200x250")
+menuButton = Menubutton(top, text = "Language", relief=FLAT)
+menuButton.grid()
+menuButton.menu= Menu(menuButton)
+menuButton["menu"] = menuButton
+menuButton.menu.add_checkbutton(label="Hindi", variable = IntVar())
+menuButton.menu.add_checkbutton(label="English", variable = IntVar())
+menuButton.menu.add_checkbutton(label="Kiswahili", variable = IntVar())
+menuButton.menu.add_checkbutton(label="Greek", variable = IntVar())
+menuButton.menu.add_checkbutton(label="Spanish", variable = IntVar())
+menuButton.menu.add_checkbutton(label="Africana", variable = IntVar())
+menuButton.pack()
+top.mainloop()
